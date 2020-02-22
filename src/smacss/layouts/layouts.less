@@ -1,0 +1,35 @@
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    .flex(row);
+    padding   : 0 4%;
+    background: #f5fdf8;
+}
+
+aside {
+    width       : 320px;
+    background  : @blue_l;
+    border-right: 1px solid #E5EBF8;
+    border-left : 1px solid rgb(220, 227, 241);
+
+    header {
+        .flex(row);
+        align-items: center;
+        height     : 122px;
+        padding    : 20px;
+        background : @green;
+    }
+}
+
+main {
+    width     : 78%;
+    padding   : 85px;
+    background: @white;
+}
+
+nav {
+    position: relative;
+}

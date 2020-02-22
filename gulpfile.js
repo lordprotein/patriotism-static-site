@@ -6,8 +6,8 @@ const gulp = require('gulp'),
 // minify = require('gulp-minify');
 
 const src = {
-	less: 'src/smacss/styles.less',
-	css: 'src/styles',
+	less: 'src/styles/less',
+	css: 'src/styles/css',
 	withBabel: 'src/scripts/withBabel',
 	withoutBabel: 'src/scripts/withoutBabel'
 }
@@ -16,7 +16,7 @@ const src = {
 
 
 const less_compile = done => {
-	gulp.src(src.less)
+	gulp.src(src.less + '/styles.less')
 		.pipe(less())
 		.pipe(autoprefixer_css({
 			overrideBrowserslist: ['last 20 versions', 'ie 8', 'ie 9'],
